@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>1. Ngày, tháng năm</h3>
+          <div class="card">
+            <div class="card-header">Ngày, tháng năm</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Ngày:</label>
+                <input type="number" class="form-control" id="day" />
+              </div>
+              <div class="form-group">
+                <label>Tháng:</label>
+                <input type="number" class="form-control" id="month" />
+              </div>
+              <div class="form-group">
+                <label>Năm:</label>
+                <input type="number" class="form-control" id="year" />
+              </div>
+              <button class="btn btn-success my-2" id="btnLastDay">
+                Ngày hôm qua
+              </button>
+              <button class="btn btn-success my-2" id="btnNextDay">
+                Ngày mai
+              </button>
+            </div>
+            <div class="card-footer" id="announce"></div>
+          </div>
+
+          <!-- 2. Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày -->
+          <hr />
+          <h3>
+            2. Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao
+            nhiêu ngày
+          </h3>
+          <div class="card">
+            <div class="card-header">Số ngày trong tháng</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Tháng:</label>
+                <input type="number" class="form-control" id="month_2" />
+              </div>
+              <div class="form-group">
+                <label>Năm:</label>
+                <input type="number" class="form-control" id="year_2" />
+              </div>
+              <button class="btn btn-success my-2" id="btnCalcDay">
+                Tính ngày
+              </button>
+            </div>
+            <div class="card-footer" id="announceDays"></div>
+          </div>
+
+          <!-- 3. Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc nó. -->
+          <hr />
+          <h3>
+            3. Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc
+            nó.
+          </h3>
+          <div class="card">
+            <div class="card-header">Đọc số nguyên</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Số nguyên có 3 chữ số</label>
+                <input type="number" class="form-control" id="num_3" />
+              </div>
+              <button class="btn btn-success my-2" id="btnReadNumber">
+                Đọc số
+              </button>
+            </div>
+            <div class="card-footer" id="announceNumber"></div>
+          </div>
+
+          <!-- 4. Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của trường đại học. Viết chương
+trình in tên sinh viên xa trường nhất. -->
+          <hr />
+          <h3>
+            4. Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của
+            trường đại học. Viết chương trình in tên sinh viên xa trường nhất.
+          </h3>
+          <div class="card">
+            <div class="card-header">Tìm sinh viên xa trường nhất</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Sinh viên 1</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name1"
+                  placeholder="Nhập tên"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="x1"
+                  placeholder="Nhập toạ độ x"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="y1"
+                  placeholder="Nhập toạ độ y"
+                />
+              </div>
+              <div class="form-group">
+                <label>Sinh viên 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name2"
+                  placeholder="Nhập tên"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="x2"
+                  placeholder="Nhập toạ độ x"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="y2"
+                  placeholder="Nhập toạ độ y"
+                />
+              </div>
+              <div class="form-group">
+                <label>Sinh viên 3</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name3"
+                  placeholder="Nhập tên"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="x3"
+                  placeholder="Nhập toạ độ x"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="y3"
+                  placeholder="Nhập toạ độ y"
+                />
+              </div>
+              <div class="form-group">
+                <label>Trường học</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="xSchool"
+                  placeholder="Nhập toạ độ x"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="ySchool"
+                  placeholder="Nhập toạ độ y"
+                />
+              </div>
+              <button class="btn btn-success my-2" id="btnCalcDistance">
+                Tìm
+              </button>
+            </div>
+            <div class="card-footer" id="announceDistance"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
